@@ -1,0 +1,34 @@
+{
+    "navigation": {
+      "projects": "Projects",
+      "services": "Services",
+      "skills": "Skills",
+      "about": "About"
+    },
+    "hero": {
+      "greeting": "Hi, I'm",
+      "role": "Full Stack Developer",
+      "description": "I build exceptional digital experiences that combine elegant design with powerful functionality.",
+      "contact": "Contact Me",
+      "location": "Paris, France"
+    },
+    "about": {
+      "title": "About Me",
+      "content": "Passionate Full Stack Developer with expertise in modern web technologies..."
+    },
+    "services": {
+      "title": "What I Do",
+      "responsive": {
+        "title": "Responsive Web & Mobile Development",
+        "description": "Creating optimal user experiences across all devices with fully responsive websites, ensuring smooth navigation and flawless presentation."
+      },
+      "templates": {
+        "title": "HTML & CSS Templates",
+        "description": "Strengthen your online presence with our HTML, CSS, and ReactJS templates. Enjoy modern and professional designs to easily create a website that reflects your business."
+      },
+      "ui": {
+        "title": "UI & Showcase Websites",
+        "description": "Shape exceptional user experiences and transform your online presence with showcase website design, combining aesthetics and user-friendliness to present your company in a captivating and professional manner."
+      }
+    }
+  }

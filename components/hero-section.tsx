@@ -2,6 +2,8 @@
 
 import { Github, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { LanguageSelector } from "@/components/language-selector";
+import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
 import Image from "next/image";
 
@@ -13,6 +15,7 @@ export function HeroSection() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Hi, I&apos;m <span className="text-primary">Reda</span>
           </h1>
+          <LanguageSelector />
           <ThemeToggle />
         </div>
         <h2 className="text-2xl md:text-3xl text-muted-foreground mb-6">
@@ -23,14 +26,18 @@ export function HeroSection() {
           with powerful functionality.
         </p>
         <div className="flex gap-4">
-          <Button>
-            <Mail className="mr-2 h-4 w-4" />
-            Contact Me
-          </Button>
-          <Button variant="outline">
-            <Github className="mr-2 h-4 w-4" />
-            GitHub
-          </Button>
+          <Link href="/contact"> 
+            <Button>
+              <Mail className="mr-2 h-4 w-4" />
+              Contact Me
+            </Button>
+          </Link>
+          <Link href="https://github.com/redondo-dev" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline">
+              <Github className="mr-2 h-4 w-4" />
+              GitHub
+            </Button>
+          </Link>
         </div>
         <div className="flex items-center gap-2 mt-6 text-muted-foreground">
           <MapPin className="h-4 w-4" />

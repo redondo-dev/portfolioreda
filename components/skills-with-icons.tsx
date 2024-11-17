@@ -56,10 +56,7 @@ const skillCategories: SkillCategory[] = [
         name: "React Router",
         icon: <SiReactrouter className="text-[#CA4245]" />,
       },
-      {
-        name: "React Query",
-        icon: <SiReactquery className="text-[#FF4154]" />,
-      },
+      
     ],
   },
   {
@@ -74,7 +71,7 @@ const skillCategories: SkillCategory[] = [
         name: "Tailwind CSS",
         icon: <SiTailwindcss className="text-[#06B6D4]" />,
       },
-      { name: "Framer Motion", icon: <SiFramer /> },
+      { name: "Framer Motion", icon: <SiFramer className="text-[#FF4154]"/> },
     ],
   },
   {

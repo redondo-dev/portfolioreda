@@ -9,6 +9,7 @@ import { SkillsWithIcons } from "@/components/skills-with-icons";
 import { ServicesSection } from "@/components/services-section";
 import ContactForm from "@/components/contactForm";
 
+
 const projects = [
   {
     title: "Librairie",

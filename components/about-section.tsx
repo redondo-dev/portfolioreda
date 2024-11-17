@@ -3,6 +3,7 @@
 import { Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import Link from "next/link";
 
 export function AboutSection() {
   return (
@@ -30,14 +31,18 @@ export function AboutSection() {
         </p>
       </div>
       <div className="flex gap-4">
-        <Button variant="outline">
-          <Linkedin className="mr-2 h-4 w-4" />
-          LinkedIn
-        </Button>
-        <Button variant="outline">
-          <Mail className="mr-2 h-4 w-4" />
-          Email
-        </Button>
+        <Link href="https://www.linkedin.com/in/riad-r%C3%A9da-fethi/" target="_blank" rel="noopener noreferrer"> {/* Lien vers LinkedIn */}
+          <Button variant="outline">
+            <Linkedin className="mr-2 h-4 w-4" />
+            LinkedIn
+          </Button>
+        </Link>
+        <Link href="/contact">
+          <Button variant="outline">
+            <Mail className="mr-2 h-4 w-4" />
+            Email
+          </Button>
+        </Link>
       </div>
     </Card>
   );

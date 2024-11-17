@@ -1,0 +1,34 @@
+{
+    "navigation": {
+        "projects": "Proyectos",
+        "services": "Servicios",
+        "skills": "Habilidades",
+        "about": "Acerca de"
+    },
+    "hero": {
+        "greeting": "Hola, soy",
+        "role": "Desarrollador Full Stack",
+        "description": "Creo experiencias digitales excepcionales que combinan un diseño elegante y funcionalidades potentes.",
+        "contact": "Contáctame",
+        "location": "París, Francia"
+    },
+    "about": {
+        "title": "Acerca de mí",
+        "content": "Desarrollador Full Stack apasionado con experiencia en tecnologías web modernas..."
+    },
+    "services": {
+        "title": "Lo que hago",
+        "responsive": {
+            "title": "Desarrollo Web & Móvil Responsivo",
+            "description": "Creación de experiencias de usuario óptimas en todos los dispositivos con sitios web completamente responsivos, garantizando una navegación fluida y una presentación impecable."
+        },
+        "templates": {
+            "title": "Plantillas HTML & CSS",
+            "description": "Fortalece tu presencia en línea con nuestras plantillas HTML, CSS y ReactJS. Aprovecha diseños modernos y profesionales para crear fácilmente un sitio web que refleje tu actividad."
+        },
+        "ui": {
+            "title": "UI & Sitios Vitrina",
+            "description": "Modela experiencias de usuario excepcionales y transforma tu presencia en línea con el diseño de sitios vitrinas, combinando estética y usabilidad para presentar tu empresa de manera cautivadora y profesional."
+        }
+    }
+}
