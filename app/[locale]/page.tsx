@@ -1,4 +1,4 @@
-"use client";
+
 
 import { useTranslations } from 'next-intl';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -9,7 +9,15 @@ import { AboutSection } from "@/components/about-section";
 import { SkillsWithIcons } from "@/components/skills-with-icons";
 import { ServicesSection } from "@/components/services-section";
 
-
+export async function generateStaticParams() {
+  return [
+    { locale: "en" },
+    { locale: "fr" },
+    { locale: "ar" },
+    { locale: "it" },
+    { locale: "es" },
+  ];
+}
 
 export default function Home() {
   const t = useTranslations();
