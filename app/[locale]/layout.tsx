@@ -1,22 +1,21 @@
-
-'use client';
+"use client";
 
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { ThemeProvider } from "@/components/theme-provider";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// Déplacez la logique d'import des messages dans un hook personnalisé
 function useMessages(locale: string) {
   const [messages, setMessages] = useState<any>(null);
 
   useEffect(() => {
     async function loadMessages() {
       try {
-        const importedMessages = (await import(`/../../messages/${locale}.json`)).default;
+        const importedMessages = (await import(`../../messages/${locale}.json`))
+          .default;
         setMessages(importedMessages);
       } catch (error) {
         notFound();
@@ -60,5 +59,3 @@ export default function LocaleLayout({
     </html>
   );
 }
-
-
