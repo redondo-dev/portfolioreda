@@ -8,6 +8,7 @@ import { ProjectCard } from "@/components/project-card";
 import { AboutSection } from "@/components/about-section";
 import { SkillsWithIcons } from "@/components/skills-with-icons";
 import { ServicesSection } from "@/components/services-section";
+import ContactForm from '@/components/contactForm';
 
 export async function generateStaticParams() {
   return [
