@@ -1,5 +1,3 @@
-
-
 import { useTranslations } from 'next-intl';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
@@ -20,25 +18,36 @@ export async function generateStaticParams() {
   ];
 }
 
-export default function Home() {
-  const t = useTranslations();
+export default function Page({ params }: { params: { locale: string } }) {
+  // Move useTranslations inside the component
+  const t = useTranslations('navigation');
 
   return (
-    <main className="gradient-bg min-h-screen">
-      <div className="max-w-5xl mx-auto px-4 py-16">
+    <div>
+      <nav>
+        <ul>
+          <li>{t('about')}</li>
+          <li>{t('projects')}</li>
+          <li>{t('services')}</li>
+          <li>{t('skills')}</li>
+          <li>{t('contact')}</li>
+        </ul>
+      </nav>
+
+      <main>
         <HeroSection />
-
-        <Tabs defaultValue="projects" className="space-y-8">
-          <TabsList className="grid w-full grid-cols-4 max-w-[500px] mx-auto bg-background/50 backdrop-blur-sm">
-           <TabsTrigger value="about">{t('navigation.about')}
-            </TabsTrigger> <TabsTrigger value="projects">{t('navigation.projects')}</TabsTrigger>         
-            <TabsTrigger value="services">{t('navigation.services')}</TabsTrigger>
-            <TabsTrigger value="skills">{t('navigation.skills')}</TabsTrigger>            
-            <TabsTrigger value="contact">{t('navigation.contact')}</TabsTrigger>
-          </TabsList>
-
-        </Tabs>
-      </div>
-    </main>
+        
+        <AboutSection />
+        
+        <SkillsWithIcons />
+        
+        <ServicesSection />
+        
+        <ContactForm />
+        
+        <p>Welcome to {params.locale} page</p>
+      </main>
+    </div>
   );
 }
+
