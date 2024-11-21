@@ -29,7 +29,7 @@ const ContactForm: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("/api/send", {
+      const response = await fetch("https://api.resend.com/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
